@@ -1,0 +1,132 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sem.css' %}">
+    <title>List Of Subjects</title>
+</head>
+
+<body>
+
+    <header class="head">
+        <h1>CIE PAPER QUALITY ASSESMENT</h1>
+        <button class="out">Logout</button>
+    </header>
+    <hr class="line">
+    <!-- Form -->
+    <div class="box">
+        {% csrf_token %}
+        <!-- Form Title -->
+        <h1 class="title">Choose Subject</h1>
+    
+        <div class="main">
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">Computational Mathematics</h3> 
+                <p> CIE-I</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-II</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-III</p>
+                <form action="/images">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <br>
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">MFCS</h3> 
+                <p> CIE-I</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-II</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-III</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <br>
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">Object Oriented Programming</h3>
+                <p> CIE-I</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-II</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-III</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <br>
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">Data Structures</h3>
+                <p> CIE-I</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-II</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-III</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <br>
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">Analog and Digital Electronics</h3>
+                <p> CIE-I</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-II</p>
+                <form action="media\login1\images">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <p> CIE-III</p>
+                <form action="media\login1\images">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+                <br>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="signin.js"></script>
+</body>
+
+</html>
+          

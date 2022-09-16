@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+        <title>Create Account</title>
+</head>
+
+<body>
+    <!-- Form -->
+    <header class="head">
+        <h1>CIE PAPER QUALITY ASSESMENT</h1>
+        <button class="out"><a href="/signup">Logout</a></button>
+    </header>
+    <hr class="line">
+    <form class="signup-form" method="post">
+        {% csrf_token %}
+        <!-- Form Title -->
+        <h1 class="title">Login</h1>
+        <!-- Input Wrapper -->
+        <!-- <label class="label"> -->
+            <!-- First Name  -->
+            <!-- <p class="label-text">Username</p> -->
+            <!-- <input id="username" class="mv-right" type="text" name="username" placeholder="&nbsp;"> -->
+            <!-- <i class="fa-solid fa-address-card f-name"></i> -->
+        <!-- </label> -->
+        <!-- Password -->
+        <!-- <label class="label"> -->
+            <!-- <p class="label-text ">Password</p> -->
+            <!-- <input id="password_el" type="password" name="pass1" placeholder="&nbsp;" autocomplete="on"> -->
+            <!-- <span data-password> <i class="fa-solid fa-eye"></i></span> -->
+        <!-- </label> -->
+       
+        <!-- Submit Button -->
+        <button class="submit-btn">
+            <a href="/add_users">
+                Login
+            </a>
+        </button>
+    </form>
+    <!-- Script -->
+    <script src="signin.js"></script>
+</body>
+
+</html>

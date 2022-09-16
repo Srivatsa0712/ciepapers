@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sem.css' %}">
+    <title>List Of Semesters</title>
+</head>
+
+<body>
+
+    <header class="head">
+        <h1>CIE PAPER QUALITY ASSESMENT</h1>
+        <button class="out"><a href="/add_committee">Logout</a></button>
+    </header>
+    <hr class="line">
+    <!-- Form -->
+    <div class="box">
+        {% csrf_token %}
+        <!-- Form Title -->
+        <h1 class="title">Choose Semester</h1>
+    
+        <div class="main">
+            <h3 class="h3">
+                <a href="/subjects3c"><input type="radio" name=b1 value="click here">III Sem</a></h3> <br>
+            <h3 class="h3">
+                <a href="/subjects4"><input type="radio" name=b1 value="click here">IV Sem</a></h3>  <br>
+            <h3 class="h3">
+                <a href="/subjects5"><input type="radio" name=b1 value="click here">V Sem</a></h3>  <br>
+            <h3 class="h3">
+                <a href="/subjects6c"> <input type="radio" name=b1 value="click here"> VI Sem</a> </h3>  <br>
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">VII Sem</h3> <br>
+            <h3 class="h3">
+                <input type="radio" name=b1 value="click here">VIII Sem</h3>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="signin.js"></script>
+</body>
+
+</html>
+          

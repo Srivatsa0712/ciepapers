@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signin.css' %}">
+    <title>Create Account</title>
+</head>
+
+<body>
+
+    <header class="head">
+        <h1>CIE PAPER QUALITY ASSESMENT</h1>
+        <button class="out"><a href="http://127.0.0.1:8000/">Logout</button></a>
+    </header>
+    <hr class="line">
+    <!-- Form -->
+    <form class="signup-form" method="post">
+        {% csrf_token %}
+        <!-- Form Title -->
+    
+            
+        <h1 class="title">Create Account</h1>
+        <!-- Input Wrapper -->
+        <!-- <label class="label">
+            <!-- First Name  -->
+            <!-- <p class="label-text">Username</p> -->
+            <!-- <input id="username" class="mv-right" type="text" name="username" placeholder="Username" required> -->
+            <!-- <i class="fa-solid fa-address-card f-name"></i> -->
+        <!-- </label> -->
+        <!-- <div class="input-wrapper"> -->
+            <!-- <label class="label"> -->
+                <!-- First Name  -->
+                <!-- <p class="label-text">First Name</p> -->
+                <!-- <input id="first-name" class="mv-right" type="text" name="fname" placeholder="First Name" required> -->
+                <!-- <i class="fa-solid fa-address-card f-name"></i> -->
+            <!-- </label> -->
+            <!-- Last Name -->
+            <!-- <label class="label"> -->
+                <!-- <p class="label-text ">Last Name</p> -->
+                <!-- <input id="last-name" type="text" name="lname" placeholder="Last Name" required> -->
+                <!-- <i class="fa-solid fa-address-card"></i> -->
+            <!-- </label> -->
+        <!-- </div> -->
+        <!-- Email -->
+        <!-- <label class="label"> -->
+            <!-- <p class="label-text ">Email</p> -->
+            <!-- <input id="email" type="email" name="email" placeholder="Email" required> -->
+            <!-- <i class="fa-solid fa-envelope"></i> -->
+        <!-- </label> -->
+        <!-- Password -->
+        <!-- <label class="label"> -->
+            <!-- <p class="label-text ">Password</p> -->
+            <!-- <input id="password_el" type="password" name="pass1" placeholder="Password" autocomplete="on" required> -->
+            <!-- <span data-password> <i class="fa-solid fa-eye"></i></span> -->
+        <!-- </label> -->
+    
+        <!-- Submit Button -->
+        <button class="submit-btn">
+           <a href="/register_user">Create Account</a> 
+   
+        </button>
+    </form>
+    <!-- Script -->
+    <script src="signin.js"></script>
+</body>
+
+</html>
